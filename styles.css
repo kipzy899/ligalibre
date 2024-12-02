@@ -1,0 +1,166 @@
+body {
+    font-family: Karla, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:
+      conic-gradient(from 135deg,#083e16 90deg,#0000 0) 15px calc(15px/2),
+      conic-gradient(from 135deg,#074a1b 90deg,#0000 0),
+      conic-gradient(from 135deg at 50% 0,#083e16 90deg,#0000 0) #074a1b;
+    background-size: 30px 15px;
+    color: white;
+}
+
+a {
+  color: #f8faf8;
+}
+
+.topnav {
+    background-color: #083e16;
+    overflow: hidden;
+    color: white;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topnav a {
+  outline: none;
+  padding: 15px 30px;
+  text-decoration: none;
+  background-color: #6d9e77;
+  border: none;
+  border-radius: 15px;
+  margin: 0 10px;
+}
+
+.topnav a:hover {
+  color: #ffff;
+  background-color: #4CAF50;
+}
+
+header {
+    background-color: #083e16;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+main {
+    padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #1b672c;
+  border-radius: 15px;
+  text-align: left;
+}
+
+thead {
+  background-color: #1b672c;
+}
+
+header nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header nav a {
+    background-color: #1b672c;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    background-color: #1b672c;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+.form-container {
+  display: flex; /* Utiliza flexbox */
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: flex-start; /* Alinea los elementos al inicio */
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+  background-color: #1b672c; /* Color de fondo */
+  padding: 20px; /* Espaciado dentro de la caja */
+  border-radius: 8px; /* Borde redondeado */
+  width: 100%; /* Ajusta el tamaño según tus necesidades */
+  box-sizing: border-box; /* Incluye padding en el tamaño total */
+}
+
+form label {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0;
+  width: 100%; /* Asegura que la etiqueta ocupe el 100% */
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px; 
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+}
+
+form textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: #999;
+}
+
+form button {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+footer {
+    background-color: #083e16;
+    color: white;
+    text-align: left;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    height: 10rem;
